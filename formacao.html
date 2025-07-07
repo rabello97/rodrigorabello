@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Configurações básicas do documento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formação</title>
+  <!-- Link para o arquivo CSS -->
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
+  <!-- Cabeçalho da página -->
   <header>
     <h1>Formação Educacional</h1>
+    <!-- Menu de navegação -->
     <nav>
       <a href="index.html">Sobre Mim</a>
       <a href="formacao.html">Formação</a>
@@ -17,6 +21,7 @@
     </nav>
   </header>
 
+  <!-- Conteúdo principal da página -->
   <main>
     <section>
       <h2>Minha Formação</h2>
@@ -25,8 +30,14 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Rodrigo Rabello</p>
+  <!-- Rodapé da página -->
+  <footer class="main-footer">
+    <p>Todos os direitos reservados - &copy; <span id="ano"></span> Rodrigo Rabello</p>
   </footer>
+
+  <!-- Script para atualizar o ano automaticamente -->
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
